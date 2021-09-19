@@ -55,7 +55,7 @@ img {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -663,7 +663,7 @@ img {
 
 /* form */
 
-.modal-title {
+.modal__title {
   display: block;
   font-weight: 700;
   font-size: 20px;
