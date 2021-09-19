@@ -663,7 +663,7 @@ img {
 
 /* form */
 
-.modal__title {
+.modal-title {
   display: block;
   font-weight: 700;
   font-size: 20px;
