@@ -202,7 +202,7 @@ img {
   fill: currentColor;
 }
 
-.contacts-link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
