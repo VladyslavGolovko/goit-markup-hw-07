@@ -663,7 +663,7 @@ img {
 
 /* form */
 
-.modal-title {
+.modal__title {
   display: block;
   font-weight: 700;
   font-size: 20px;
@@ -797,8 +797,8 @@ img {
   margin-top: 30px;
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal__btn:hover,
+.modal__btn:focus {
   background-color: var(--button-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
