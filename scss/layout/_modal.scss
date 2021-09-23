@@ -53,9 +53,6 @@
   background-color: var(--tertiary-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-}
-
-.modal-close__btn {
   &:hover .modal-close__icon,
   &:focus .modal-close__icon {
     fill: var(--accent-color);

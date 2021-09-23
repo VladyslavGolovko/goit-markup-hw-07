@@ -1,8 +1,8 @@
-.works {
+.section--no-padding-top {
   padding-top: 0;
 }
 
-.works-list {
+.works {
   display: flex;
   margin-top: 50px;
 }
@@ -13,11 +13,11 @@
   }
 }
 
-.works-card {
+.works__box {
   position: relative;
 }
 
-.works-card__text {
+.works__text {
   display: flex;
   justify-content: center;
   align-items: center;

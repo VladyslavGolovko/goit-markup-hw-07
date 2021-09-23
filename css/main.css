@@ -145,9 +145,7 @@ img {
   margin-right: 50px;
 }
 
-.header-list__link,
-.current__studio,
-.current__portfolio {
+.header-list__link {
   display: block;
   position: relative;
   padding-top: 32px;
@@ -160,13 +158,11 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current__studio,
-.current__portfolio {
+.header-list__link--current {
   color: var(--accent-color);
 }
 
-.current__studio::after,
-.current__portfolio::after {
+.header-list__link--current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -192,12 +188,7 @@ img {
   margin-right: 50px;
 }
 
-.contacts__email {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contacts__phone {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -262,7 +253,7 @@ img {
   display: flex;
 }
 
-.advantages-card {
+.advantages__box {
   width: 270px;
   height: 120px;
   background-color: var(--our-team-bg-color);
@@ -300,11 +291,11 @@ img {
 
 /* WORKS */
 
-.works {
+.section--no-padding-top {
   padding-top: 0;
 }
 
-.works-list {
+.works {
   display: flex;
   margin-top: 50px;
 }
@@ -313,11 +304,11 @@ img {
   margin-right: 30px;
 }
 
-.works-card {
+.works__box {
   position: relative;
 }
 
-.works-card__text {
+.works__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,11 +327,11 @@ img {
 
 /* OUR-TEAM */
 
-.our-team {
+.section--background {
   background-color: var(--our-team-bg-color);
 }
 
-.our-team-main {
+.our-team__box {
   border-bottom: 1px solid var(--border-color);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--tertiary-text-color);
@@ -354,11 +345,11 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.our-team-social__icon {
+.socials__icon {
   fill: currentColor;
 }
 
-.our-team-social__link {
+.socials__link {
   color: var(--social-link-color);
   cursor: pointer;
   width: 44px;
@@ -372,18 +363,18 @@ img {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-social__link:hover,
-.our-team-social__link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
   color: var(--tertiary-text-color);
 }
 
-.our-team-social-list {
+.socials-list {
   display: flex;
   justify-content: center;
 }
 
-.our-team-social__item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -396,7 +387,7 @@ img {
   margin-right: 30px;
 }
 
-.our-team-main__title {
+.our-team__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -405,7 +396,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.our-team-main__text {
+.our-team__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.17;
@@ -855,13 +846,13 @@ img {
   margin-left: -30px;
 }
 
-.projects-link {
+.projects__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-link:hover,
-.projects-link:focus {
+.projects__link:hover,
+.projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -872,7 +863,7 @@ img {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.projects-main {
+.projects__wrapper {
   padding: 20px 24px 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -880,26 +871,26 @@ img {
   background-color: var(--tertiary-text-color);
 }
 
-.projects-main__title {
+.projects__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
 
-.projects-main__text {
+.projects__text {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
-.projects-overlay {
+.projects__box {
   position: relative;
   overflow: hidden;
 }
 
-.projects-overlay__text {
+.projects__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -915,7 +906,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects__item:hover .projects-overlay__text,
-.projects__item:focus .projects-overlay__text {
+.projects__item:hover .projects__overlay,
+.projects__item:focus .projects__overlay {
   transform: translateY(0%);
 }
