@@ -65,7 +65,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.visually-hidden {
+.section__title--visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
